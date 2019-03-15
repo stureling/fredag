@@ -1,0 +1,9 @@
+echo "PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"" >> ~/.bashrc
+echo "export GEM_HOME=$HOME/.gem" >> ~/.bashrc
+PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+export GEM_HOME=$HOME/.gem
+gem install colored
+echo "ruby ~/.fredag/fredag.rb" >> ~/.bashrc
+ruby ~/.fredag/fredag.rb
+echo "
+Installationen är klar, mina bekanta"
